@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useEffect, useState } from "react";
 import Chat from "./components/Chat";
 
-const socket = io.connect("https://ronny-chat-application.herokuapp.com/");
+const socket = io.connect("https://ronny-chat-application.herokuapp.com");
 
 function App() {
   //User states
