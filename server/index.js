@@ -9,6 +9,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "https://ronny-chat-application.herokuapp.com/",
+    credentials: true,
     methods: ["GET", "POST"],
   },
 });
