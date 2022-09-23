@@ -51,15 +51,6 @@ function App() {
           <button onClick={joinRoom}>Join Room</button>
         </div>
       ) : (
-        /* <input
-        placeholder="Type Here..."
-        onChange={(event) => {
-          setMessage(event.target.value);
-        }}
-      />
-      <button onClick={sendMessage}>Send</button>
-      <h1>Message:</h1>
-      {messageReceived}*/
         <Chat socket={socket} userName={userName} room={room} />
       )}
     </div>
